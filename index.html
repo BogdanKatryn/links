@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посилання</title>
+    <link rel="stylesheet" href="css/links.css">
+</head>
+<body>
+    <p>Ми вивчаємо посилання</p>
+    <a href="https://bogdankatryn.github.io/index/" target="_blank" ><button class="b1">Index</button></a>
+    <a href="https://bogdankatryn.github.io/gradient/" ><button class="b2">Gradient</button></a>
+    <a href="https://bogdankatryn.github.io/images/" target="_blank" ><button class="b3">Images</button></a>
+    <a href="https://bogdankatryn.github.io/Symbols/" target="_blank" ><button class="b4">Symbols</button></a>
+    <a href="https://bogdankatryn.github.io/lists/" target="_blank" ><button id="b5" class="b5" onmouseover="changeText()">❌Lists❌</button></a>
+    <script>
+        var button = document.getElementById("b5");
+        var originalText = button.innerHTML;
+
+        button.addEventListener("mouseover", function() {
+            button.innerHTML = "✅Lists✅";
+        });
+            
+        button.addEventListener("mouseout", function() {
+            button.innerHTML = originalText;
+        });
+    </script>
+    <a href="https://bogdankatryn.github.io/table/" target="_blank" ><button class="b6">Tables</button></a><br>
+    <a href="https://bogdankatryn.github.io/Ukraine/" target="_blank" ><button class="b7">Ukraine</button></a>
+    <a href="https://bogdankatryn.github.io/links/" target="_blank" ><button class="b8">Links</button></a>
+    
+</body>
+</html>
